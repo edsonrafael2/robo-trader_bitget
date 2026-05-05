@@ -1,0 +1,442 @@
+[2026-03-28 17:17:35] Rob� iniciado...
+[2026-03-28 18:50:49] Erro ao buscar candles: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+[2026-03-28 23:13:53] Rob� iniciado...
+[2026-04-11 20:21:54] Rob� iniciado...
+[2026-04-22 01:43:56] Rob� iniciado...
+[2026-04-28 21:00:56] 🤖 Robô iniciado e monitorando mercado
+[2026-04-28 21:00:58] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:01:00] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:01:15] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:01:17] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:01:33] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:01:35] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:01:50] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:01:52] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:02:07] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:02:10] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:24:10] 🤖 Robô iniciado e monitorando mercado
+[2026-04-28 21:24:12] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:24:14] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:24:29] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:24:31] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-04-28 21:25:26] 🤖 Robô iniciado e monitorando mercado
+[2026-04-28 21:25:28] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:25:31] 📈 Compra executada em 76322.69
+[2026-04-28 21:25:43] Preço: 76322.69 | Estado: TAKE_PROFIT
+[2026-04-28 21:25:43] Saindo da posição
+[2026-04-28 21:25:44] 📊 Venda executada | Resultado: 0.00% | Valor: 0.00 USDT
+[2026-04-28 21:27:49] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:27:52] 📈 Compra executada em 76326.37
+[2026-04-28 21:28:04] Preço: 76326.37 | Estado: TAKE_PROFIT
+[2026-04-28 21:28:04] Saindo da posição
+[2026-04-28 21:28:05] 📊 Venda executada | Resultado: 0.00% | Valor: 0.00 USDT
+[2026-04-28 21:30:11] 📈 Sinal de COMPRA detectado
+[2026-04-28 21:30:14] 📈 Compra executada em 76334.36
+[2026-04-28 22:43:19] 🤖 Robô iniciado e monitorando mercado
+[2026-04-30 13:13:35] 🤖 Robô iniciado e monitorando mercado
+[2026-04-30 23:43:37] 🤖 Robô iniciado e monitorando mercado
+[2026-05-01 19:04:28] 🤖 Robô iniciado e monitorando mercado
+[2026-05-01 22:39:09] Erro ao buscar candles de BTCUSDT: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+[2026-05-02 10:29:07] 🤖 Robô iniciado e monitorando mercado
+[2026-05-03 14:11:37] 🤖 Robô iniciado e monitorando mercado
+[2026-05-03 16:15:15] Erro ao buscar candles de BTCUSDT: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+[2026-05-04 09:47:32] 🤖 Robô iniciado e monitorando mercado
+[2026-05-04 12:26:58] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:27:03] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:27:18] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:27:21] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:27:36] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:27:40] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:27:56] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:28:00] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:28:15] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:28:18] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:28:42] 🤖 Robô iniciado e monitorando mercado
+[2026-05-04 12:28:44] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:28:47] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:29:02] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:29:06] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:29:22] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:29:25] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:29:40] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:29:45] Erro inesperado no loop principal: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+[2026-05-04 12:36:47] 🤖 Robô iniciado e monitorando mercado
+[2026-05-04 12:42:30] 📈 Sinal de COMPRA detectado em BTCUSDT
+[2026-05-04 12:42:35] Compra executada em 79795.42 (BTCUSDT)
+[2026-05-04 12:42:49] BTCUSDT | Preço: 79811.77 | Estado: HOLD
+[2026-05-04 12:43:01] BTCUSDT | Preço: 79815.66 | Estado: HOLD
+[2026-05-04 12:43:12] BTCUSDT | Preço: 79817.92 | Estado: HOLD
+[2026-05-04 12:43:23] BTCUSDT | Preço: 79788.49 | Estado: HOLD
+[2026-05-04 12:43:35] BTCUSDT | Preço: 79799.05 | Estado: HOLD
+[2026-05-04 12:43:46] BTCUSDT | Preço: 79797.49 | Estado: HOLD
+[2026-05-04 12:43:57] BTCUSDT | Preço: 79816.0 | Estado: HOLD
+[2026-05-04 12:44:09] BTCUSDT | Preço: 79823.3 | Estado: HOLD
+[2026-05-04 12:44:21] BTCUSDT | Preço: 79840.01 | Estado: HOLD
+[2026-05-04 12:44:32] BTCUSDT | Preço: 79880.05 | Estado: HOLD
+[2026-05-04 12:44:44] BTCUSDT | Preço: 79892.65 | Estado: HOLD
+[2026-05-04 12:44:55] BTCUSDT | Preço: 79926.71 | Estado: HOLD
+[2026-05-04 12:45:06] BTCUSDT | Preço: 79860.56 | Estado: HOLD
+[2026-05-04 12:45:17] BTCUSDT | Preço: 79904.91 | Estado: HOLD
+[2026-05-04 12:45:29] BTCUSDT | Preço: 79922.0 | Estado: HOLD
+[2026-05-04 12:45:40] BTCUSDT | Preço: 79856.42 | Estado: HOLD
+[2026-05-04 12:45:51] BTCUSDT | Preço: 79818.99 | Estado: HOLD
+[2026-05-04 12:46:02] BTCUSDT | Preço: 79813.63 | Estado: HOLD
+[2026-05-04 12:46:14] BTCUSDT | Preço: 79833.14 | Estado: HOLD
+[2026-05-04 12:46:25] BTCUSDT | Preço: 79849.72 | Estado: HOLD
+[2026-05-04 12:46:36] BTCUSDT | Preço: 79871.46 | Estado: HOLD
+[2026-05-04 12:46:48] BTCUSDT | Preço: 79853.04 | Estado: HOLD
+[2026-05-04 12:46:59] BTCUSDT | Preço: 79844.96 | Estado: HOLD
+[2026-05-04 12:47:10] BTCUSDT | Preço: 79853.04 | Estado: HOLD
+[2026-05-04 12:47:21] BTCUSDT | Preço: 79845.13 | Estado: HOLD
+[2026-05-04 12:47:33] BTCUSDT | Preço: 79850.39 | Estado: HOLD
+[2026-05-04 12:47:44] BTCUSDT | Preço: 79832.5 | Estado: HOLD
+[2026-05-04 12:47:55] BTCUSDT | Preço: 79800.06 | Estado: HOLD
+[2026-05-04 12:48:07] BTCUSDT | Preço: 79786.89 | Estado: HOLD
+[2026-05-04 12:48:18] BTCUSDT | Preço: 79828.02 | Estado: HOLD
+[2026-05-04 12:48:29] BTCUSDT | Preço: 79814.43 | Estado: HOLD
+[2026-05-04 12:48:41] BTCUSDT | Preço: 79799.13 | Estado: HOLD
+[2026-05-04 12:48:52] BTCUSDT | Preço: 79836.16 | Estado: HOLD
+[2026-05-04 12:49:04] BTCUSDT | Preço: 79799.88 | Estado: HOLD
+[2026-05-04 12:49:16] BTCUSDT | Preço: 79817.99 | Estado: HOLD
+[2026-05-04 12:49:27] BTCUSDT | Preço: 79783.7 | Estado: HOLD
+[2026-05-04 12:49:38] BTCUSDT | Preço: 79797.08 | Estado: HOLD
+[2026-05-04 12:49:49] BTCUSDT | Preço: 79786.82 | Estado: HOLD
+[2026-05-04 12:50:00] BTCUSDT | Preço: 79796.36 | Estado: HOLD
+[2026-05-04 12:50:12] BTCUSDT | Preço: 79827.95 | Estado: HOLD
+[2026-05-04 12:50:23] BTCUSDT | Preço: 79825.8 | Estado: HOLD
+[2026-05-04 12:50:35] BTCUSDT | Preço: 79772.8 | Estado: HOLD
+[2026-05-04 12:50:46] BTCUSDT | Preço: 79785.07 | Estado: HOLD
+[2026-05-04 12:50:57] BTCUSDT | Preço: 79772.81 | Estado: HOLD
+[2026-05-04 12:51:09] BTCUSDT | Preço: 79764.82 | Estado: HOLD
+[2026-05-04 12:51:20] BTCUSDT | Preço: 79714.49 | Estado: HOLD
+[2026-05-04 12:51:32] BTCUSDT | Preço: 79650.0 | Estado: HOLD
+[2026-05-04 12:51:43] BTCUSDT | Preço: 79569.24 | Estado: HOLD
+[2026-05-04 12:51:55] BTCUSDT | Preço: 79600.0 | Estado: HOLD
+[2026-05-04 12:52:06] BTCUSDT | Preço: 79592.0 | Estado: HOLD
+[2026-05-04 12:52:17] BTCUSDT | Preço: 79573.09 | Estado: HOLD
+[2026-05-04 12:52:29] BTCUSDT | Preço: 79617.83 | Estado: HOLD
+[2026-05-04 12:52:40] BTCUSDT | Preço: 79775.01 | Estado: HOLD
+[2026-05-04 12:52:51] BTCUSDT | Preço: 79683.82 | Estado: HOLD
+[2026-05-04 12:53:03] BTCUSDT | Preço: 79715.37 | Estado: HOLD
+[2026-05-04 12:53:14] BTCUSDT | Preço: 79747.99 | Estado: HOLD
+[2026-05-04 12:53:26] BTCUSDT | Preço: 79765.18 | Estado: HOLD
+[2026-05-04 12:53:37] BTCUSDT | Preço: 79753.17 | Estado: HOLD
+[2026-05-04 12:53:48] BTCUSDT | Preço: 79836.04 | Estado: HOLD
+[2026-05-04 12:53:59] BTCUSDT | Preço: 79810.39 | Estado: HOLD
+[2026-05-04 12:54:11] BTCUSDT | Preço: 79858.0 | Estado: HOLD
+[2026-05-04 12:54:22] BTCUSDT | Preço: 79873.1 | Estado: HOLD
+[2026-05-04 12:54:33] BTCUSDT | Preço: 79875.47 | Estado: HOLD
+[2026-05-04 12:54:45] BTCUSDT | Preço: 79899.5 | Estado: HOLD
+[2026-05-04 12:54:56] BTCUSDT | Preço: 79912.61 | Estado: HOLD
+[2026-05-04 12:55:08] BTCUSDT | Preço: 80033.71 | Estado: HOLD
+[2026-05-04 12:55:19] BTCUSDT | Preço: 80008.35 | Estado: HOLD
+[2026-05-04 12:55:31] BTCUSDT | Preço: 79988.36 | Estado: HOLD
+[2026-05-04 12:55:43] BTCUSDT | Preço: 79982.15 | Estado: HOLD
+[2026-05-04 12:55:54] BTCUSDT | Preço: 79954.87 | Estado: HOLD
+[2026-05-04 12:56:05] BTCUSDT | Preço: 79980.23 | Estado: HOLD
+[2026-05-04 12:56:17] BTCUSDT | Preço: 79987.53 | Estado: HOLD
+[2026-05-04 12:56:28] BTCUSDT | Preço: 79984.32 | Estado: HOLD
+[2026-05-04 12:56:39] BTCUSDT | Preço: 79964.29 | Estado: HOLD
+[2026-05-04 12:56:51] BTCUSDT | Preço: 79955.64 | Estado: HOLD
+[2026-05-04 12:57:02] BTCUSDT | Preço: 79973.57 | Estado: HOLD
+[2026-05-04 12:57:13] BTCUSDT | Preço: 79973.57 | Estado: HOLD
+[2026-05-04 12:57:25] BTCUSDT | Preço: 79976.19 | Estado: HOLD
+[2026-05-04 12:57:36] BTCUSDT | Preço: 79979.99 | Estado: HOLD
+[2026-05-04 12:57:47] BTCUSDT | Preço: 79966.01 | Estado: HOLD
+[2026-05-04 12:57:59] BTCUSDT | Preço: 79950.01 | Estado: HOLD
+[2026-05-04 12:58:10] BTCUSDT | Preço: 79949.7 | Estado: HOLD
+[2026-05-04 12:58:21] BTCUSDT | Preço: 79958.49 | Estado: HOLD
+[2026-05-04 12:58:32] BTCUSDT | Preço: 79999.1 | Estado: HOLD
+[2026-05-04 12:58:44] BTCUSDT | Preço: 79986.62 | Estado: HOLD
+[2026-05-04 12:58:56] BTCUSDT | Preço: 80005.21 | Estado: HOLD
+[2026-05-04 12:59:08] BTCUSDT | Preço: 80024.3 | Estado: HOLD
+[2026-05-04 12:59:19] BTCUSDT | Preço: 80071.83 | Estado: HOLD
+[2026-05-04 12:59:32] BTCUSDT | Preço: 80119.52 | Estado: HOLD
+[2026-05-04 12:59:44] BTCUSDT | Preço: 80036.18 | Estado: HOLD
+[2026-05-04 12:59:56] BTCUSDT | Preço: 80036.49 | Estado: HOLD
+[2026-05-04 13:00:08] BTCUSDT | Preço: 80040.29 | Estado: HOLD
+[2026-05-04 13:00:20] BTCUSDT | Preço: 80018.71 | Estado: HOLD
+[2026-05-04 13:00:31] BTCUSDT | Preço: 80016.28 | Estado: HOLD
+[2026-05-04 13:00:42] BTCUSDT | Preço: 80058.2 | Estado: HOLD
+[2026-05-04 13:00:54] BTCUSDT | Preço: 80055.88 | Estado: HOLD
+[2026-05-04 13:01:05] BTCUSDT | Preço: 80048.78 | Estado: HOLD
+[2026-05-04 13:01:17] BTCUSDT | Preço: 80016.37 | Estado: HOLD
+[2026-05-04 13:01:28] BTCUSDT | Preço: 79978.12 | Estado: HOLD
+[2026-05-04 13:01:39] BTCUSDT | Preço: 79978.11 | Estado: HOLD
+[2026-05-04 13:01:51] BTCUSDT | Preço: 79957.82 | Estado: HOLD
+[2026-05-04 13:02:02] BTCUSDT | Preço: 79982.59 | Estado: HOLD
+[2026-05-04 13:02:13] BTCUSDT | Preço: 79981.67 | Estado: HOLD
+[2026-05-04 13:02:25] BTCUSDT | Preço: 79978.11 | Estado: HOLD
+[2026-05-04 13:02:36] BTCUSDT | Preço: 79995.77 | Estado: HOLD
+[2026-05-04 13:02:47] BTCUSDT | Preço: 80007.99 | Estado: HOLD
+[2026-05-04 13:02:59] BTCUSDT | Preço: 80042.12 | Estado: HOLD
+[2026-05-04 13:03:10] BTCUSDT | Preço: 80013.18 | Estado: HOLD
+[2026-05-04 13:03:22] BTCUSDT | Preço: 80043.56 | Estado: HOLD
+[2026-05-04 13:03:34] BTCUSDT | Preço: 79997.94 | Estado: HOLD
+[2026-05-04 13:03:45] BTCUSDT | Preço: 80002.3 | Estado: HOLD
+[2026-05-04 13:03:56] BTCUSDT | Preço: 80019.24 | Estado: HOLD
+[2026-05-04 13:04:08] BTCUSDT | Preço: 80041.96 | Estado: HOLD
+[2026-05-04 13:04:20] BTCUSDT | Preço: 80025.94 | Estado: HOLD
+[2026-05-04 13:04:32] BTCUSDT | Preço: 80024.51 | Estado: HOLD
+[2026-05-04 13:04:43] BTCUSDT | Preço: 80023.09 | Estado: HOLD
+[2026-05-04 13:04:55] BTCUSDT | Preço: 80050.0 | Estado: HOLD
+[2026-05-04 13:05:06] BTCUSDT | Preço: 80034.18 | Estado: HOLD
+[2026-05-04 13:05:17] BTCUSDT | Preço: 79986.11 | Estado: HOLD
+[2026-05-04 13:05:28] BTCUSDT | Preço: 79978.12 | Estado: HOLD
+[2026-05-04 13:05:40] BTCUSDT | Preço: 79966.0 | Estado: HOLD
+[2026-05-04 13:05:51] BTCUSDT | Preço: 79924.38 | Estado: HOLD
+[2026-05-04 13:06:02] BTCUSDT | Preço: 79959.89 | Estado: HOLD
+[2026-05-04 13:06:14] BTCUSDT | Preço: 79938.0 | Estado: HOLD
+[2026-05-04 13:06:25] BTCUSDT | Preço: 79944.04 | Estado: HOLD
+[2026-05-04 13:06:37] BTCUSDT | Preço: 79943.8 | Estado: HOLD
+[2026-05-04 13:06:49] BTCUSDT | Preço: 79974.0 | Estado: HOLD
+[2026-05-04 13:07:00] BTCUSDT | Preço: 79964.61 | Estado: HOLD
+[2026-05-04 13:07:11] BTCUSDT | Preço: 79990.63 | Estado: HOLD
+[2026-05-04 13:07:22] BTCUSDT | Preço: 80005.09 | Estado: HOLD
+[2026-05-04 13:07:34] BTCUSDT | Preço: 79956.25 | Estado: HOLD
+[2026-05-04 13:07:45] BTCUSDT | Preço: 79991.89 | Estado: HOLD
+[2026-05-04 13:07:56] BTCUSDT | Preço: 79741.14 | Estado: HOLD
+[2026-05-04 13:08:07] BTCUSDT | Preço: 79710.42 | Estado: HOLD
+[2026-05-04 13:08:19] BTCUSDT | Preço: 79791.07 | Estado: HOLD
+[2026-05-04 13:08:30] BTCUSDT | Preço: 79860.07 | Estado: HOLD
+[2026-05-04 13:08:42] BTCUSDT | Preço: 79819.71 | Estado: HOLD
+[2026-05-04 13:08:53] BTCUSDT | Preço: 79793.97 | Estado: HOLD
+[2026-05-04 13:09:04] BTCUSDT | Preço: 79750.01 | Estado: HOLD
+[2026-05-04 13:09:15] BTCUSDT | Preço: 79737.18 | Estado: HOLD
+[2026-05-04 13:09:27] BTCUSDT | Preço: 79752.93 | Estado: HOLD
+[2026-05-04 13:09:38] BTCUSDT | Preço: 79773.11 | Estado: HOLD
+[2026-05-04 13:09:50] BTCUSDT | Preço: 79761.31 | Estado: HOLD
+[2026-05-04 13:10:01] BTCUSDT | Preço: 79768.04 | Estado: HOLD
+[2026-05-04 13:10:13] BTCUSDT | Preço: 79750.01 | Estado: HOLD
+[2026-05-04 13:10:24] BTCUSDT | Preço: 79728.31 | Estado: HOLD
+[2026-05-04 13:10:36] BTCUSDT | Preço: 79762.04 | Estado: HOLD
+[2026-05-04 13:10:49] BTCUSDT | Preço: 79757.95 | Estado: HOLD
+[2026-05-04 13:11:02] BTCUSDT | Preço: 79728.31 | Estado: HOLD
+[2026-05-04 13:11:13] BTCUSDT | Preço: 79731.8 | Estado: HOLD
+[2026-05-04 13:11:24] BTCUSDT | Preço: 79734.09 | Estado: HOLD
+[2026-05-04 13:11:36] BTCUSDT | Preço: 79767.41 | Estado: HOLD
+[2026-05-04 13:11:47] BTCUSDT | Preço: 79803.97 | Estado: HOLD
+[2026-05-04 13:11:59] BTCUSDT | Preço: 79823.99 | Estado: HOLD
+[2026-05-04 13:12:11] BTCUSDT | Preço: 79804.89 | Estado: HOLD
+[2026-05-04 13:12:22] BTCUSDT | Preço: 79804.88 | Estado: HOLD
+[2026-05-04 13:12:34] BTCUSDT | Preço: 79788.49 | Estado: HOLD
+[2026-05-04 13:12:45] BTCUSDT | Preço: 79794.54 | Estado: HOLD
+[2026-05-04 13:12:57] BTCUSDT | Preço: 79803.27 | Estado: HOLD
+[2026-05-04 13:13:09] BTCUSDT | Preço: 79761.24 | Estado: HOLD
+[2026-05-04 13:13:21] BTCUSDT | Preço: 79761.24 | Estado: HOLD
+[2026-05-04 13:13:32] BTCUSDT | Preço: 79738.59 | Estado: HOLD
+[2026-05-04 13:13:44] BTCUSDT | Preço: 79716.72 | Estado: HOLD
+[2026-05-04 13:13:55] BTCUSDT | Preço: 79718.29 | Estado: HOLD
+[2026-05-04 13:14:07] BTCUSDT | Preço: 79721.92 | Estado: HOLD
+[2026-05-04 13:14:18] BTCUSDT | Preço: 79699.18 | Estado: HOLD
+[2026-05-04 13:14:29] BTCUSDT | Preço: 79735.33 | Estado: HOLD
+[2026-05-04 13:14:40] BTCUSDT | Preço: 79733.12 | Estado: HOLD
+[2026-05-04 13:14:52] BTCUSDT | Preço: 79717.65 | Estado: HOLD
+[2026-05-04 13:15:03] BTCUSDT | Preço: 79715.15 | Estado: HOLD
+[2026-05-04 13:15:14] BTCUSDT | Preço: 79726.56 | Estado: HOLD
+[2026-05-04 13:15:26] BTCUSDT | Preço: 79735.23 | Estado: HOLD
+[2026-05-04 13:15:37] BTCUSDT | Preço: 79707.14 | Estado: HOLD
+[2026-05-04 13:15:49] BTCUSDT | Preço: 79713.86 | Estado: HOLD
+[2026-05-04 13:16:01] BTCUSDT | Preço: 79712.2 | Estado: HOLD
+[2026-05-04 13:16:13] BTCUSDT | Preço: 79693.46 | Estado: HOLD
+[2026-05-04 13:16:25] BTCUSDT | Preço: 79641.32 | Estado: HOLD
+[2026-05-04 13:16:36] BTCUSDT | Preço: 79622.52 | Estado: HOLD
+[2026-05-04 13:16:48] BTCUSDT | Preço: 79668.96 | Estado: HOLD
+[2026-05-04 13:17:01] BTCUSDT | Preço: 79714.39 | Estado: HOLD
+[2026-05-04 13:17:13] BTCUSDT | Preço: 79772.5 | Estado: HOLD
+[2026-05-04 13:17:25] BTCUSDT | Preço: 79788.47 | Estado: HOLD
+[2026-05-04 13:17:37] BTCUSDT | Preço: 79877.89 | Estado: HOLD
+[2026-05-04 13:17:48] BTCUSDT | Preço: 79856.25 | Estado: HOLD
+[2026-05-04 13:17:59] BTCUSDT | Preço: 79844.37 | Estado: HOLD
+[2026-05-04 13:18:11] BTCUSDT | Preço: 79878.68 | Estado: HOLD
+[2026-05-04 13:18:23] BTCUSDT | Preço: 79886.3 | Estado: HOLD
+[2026-05-04 13:18:34] BTCUSDT | Preço: 79923.48 | Estado: HOLD
+[2026-05-04 13:18:45] BTCUSDT | Preço: 79967.8 | Estado: HOLD
+[2026-05-04 13:18:57] BTCUSDT | Preço: 79986.11 | Estado: HOLD
+[2026-05-04 13:19:08] BTCUSDT | Preço: 80017.98 | Estado: HOLD
+[2026-05-04 13:19:19] BTCUSDT | Preço: 80034.45 | Estado: HOLD
+[2026-05-04 13:19:31] BTCUSDT | Preço: 80042.3 | Estado: HOLD
+[2026-05-04 13:19:42] BTCUSDT | Preço: 80050.78 | Estado: HOLD
+[2026-05-04 13:19:53] BTCUSDT | Preço: 80160.2 | Estado: HOLD
+[2026-05-04 13:20:05] BTCUSDT | Preço: 80124.95 | Estado: HOLD
+[2026-05-04 13:20:16] BTCUSDT | Preço: 80288.0 | Estado: HOLD
+[2026-05-04 13:20:28] BTCUSDT | Preço: 80243.52 | Estado: HOLD
+[2026-05-04 13:20:39] BTCUSDT | Preço: 80226.43 | Estado: HOLD
+[2026-05-04 13:20:50] BTCUSDT | Preço: 80250.78 | Estado: HOLD
+[2026-05-04 13:21:02] BTCUSDT | Preço: 80273.81 | Estado: HOLD
+[2026-05-04 13:21:13] BTCUSDT | Preço: 80251.41 | Estado: HOLD
+[2026-05-04 13:21:25] BTCUSDT | Preço: 80283.04 | Estado: HOLD
+[2026-05-04 13:21:36] BTCUSDT | Preço: 80324.73 | Estado: HOLD
+[2026-05-04 13:21:48] BTCUSDT | Preço: 80292.54 | Estado: HOLD
+[2026-05-04 13:22:00] BTCUSDT | Preço: 80310.89 | Estado: HOLD
+[2026-05-04 13:22:11] BTCUSDT | Preço: 80286.07 | Estado: HOLD
+[2026-05-04 13:22:23] BTCUSDT | Preço: 80325.73 | Estado: HOLD
+[2026-05-04 13:22:35] BTCUSDT | Preço: 80333.31 | Estado: HOLD
+[2026-05-04 13:22:46] BTCUSDT | Preço: 80309.47 | Estado: HOLD
+[2026-05-04 13:22:57] BTCUSDT | Preço: 80336.58 | Estado: HOLD
+[2026-05-04 13:23:08] BTCUSDT | Preço: 80372.98 | Estado: HOLD
+[2026-05-04 13:23:20] BTCUSDT | Preço: 80370.54 | Estado: HOLD
+[2026-05-04 13:23:31] BTCUSDT | Preço: 80327.1 | Estado: HOLD
+[2026-05-04 13:23:42] BTCUSDT | Preço: 80314.42 | Estado: HOLD
+[2026-05-04 13:23:53] BTCUSDT | Preço: 80292.83 | Estado: HOLD
+[2026-05-04 13:24:05] BTCUSDT | Preço: 80312.77 | Estado: HOLD
+[2026-05-04 13:24:16] BTCUSDT | Preço: 80276.27 | Estado: HOLD
+[2026-05-04 13:24:28] BTCUSDT | Preço: 80262.52 | Estado: HOLD
+[2026-05-04 13:24:39] BTCUSDT | Preço: 80262.53 | Estado: HOLD
+[2026-05-04 13:24:50] BTCUSDT | Preço: 80243.69 | Estado: HOLD
+[2026-05-04 13:25:02] BTCUSDT | Preço: 80276.0 | Estado: HOLD
+[2026-05-04 13:25:13] BTCUSDT | Preço: 80319.58 | Estado: HOLD
+[2026-05-04 13:25:24] BTCUSDT | Preço: 80328.26 | Estado: HOLD
+[2026-05-04 13:25:36] BTCUSDT | Preço: 80331.74 | Estado: HOLD
+[2026-05-04 13:25:48] BTCUSDT | Preço: 80286.08 | Estado: HOLD
+[2026-05-04 13:25:59] BTCUSDT | Preço: 80235.61 | Estado: HOLD
+[2026-05-04 13:26:10] BTCUSDT | Preço: 80278.77 | Estado: HOLD
+[2026-05-04 13:26:22] BTCUSDT | Preço: 80285.4 | Estado: HOLD
+[2026-05-04 13:26:33] BTCUSDT | Preço: 80277.79 | Estado: HOLD
+[2026-05-04 13:26:44] BTCUSDT | Preço: 80275.59 | Estado: HOLD
+[2026-05-04 13:26:56] BTCUSDT | Preço: 80255.49 | Estado: HOLD
+[2026-05-04 13:27:07] BTCUSDT | Preço: 80225.96 | Estado: HOLD
+[2026-05-04 13:27:19] BTCUSDT | Preço: 80205.34 | Estado: HOLD
+[2026-05-04 13:27:30] BTCUSDT | Preço: 80210.79 | Estado: HOLD
+[2026-05-04 13:27:41] BTCUSDT | Preço: 80193.81 | Estado: HOLD
+[2026-05-04 13:27:52] BTCUSDT | Preço: 80182.5 | Estado: HOLD
+[2026-05-04 13:28:04] BTCUSDT | Preço: 80200.21 | Estado: HOLD
+[2026-05-04 13:28:15] BTCUSDT | Preço: 80218.61 | Estado: HOLD
+[2026-05-04 13:28:27] BTCUSDT | Preço: 80211.29 | Estado: HOLD
+[2026-05-04 13:28:38] BTCUSDT | Preço: 80199.39 | Estado: HOLD
+[2026-05-04 13:28:49] BTCUSDT | Preço: 80225.97 | Estado: HOLD
+[2026-05-04 13:29:01] BTCUSDT | Preço: 80226.82 | Estado: HOLD
+[2026-05-04 13:29:12] BTCUSDT | Preço: 80252.0 | Estado: HOLD
+[2026-05-04 13:29:23] BTCUSDT | Preço: 80235.18 | Estado: HOLD
+[2026-05-04 13:29:35] BTCUSDT | Preço: 80243.92 | Estado: HOLD
+[2026-05-04 13:29:46] BTCUSDT | Preço: 80249.35 | Estado: HOLD
+[2026-05-04 13:29:58] BTCUSDT | Preço: 80243.96 | Estado: HOLD
+[2026-05-04 13:30:10] BTCUSDT | Preço: 80208.65 | Estado: HOLD
+[2026-05-04 13:30:21] BTCUSDT | Preço: 80196.51 | Estado: HOLD
+[2026-05-04 13:30:32] BTCUSDT | Preço: 80168.62 | Estado: HOLD
+[2026-05-04 13:30:44] BTCUSDT | Preço: 80167.64 | Estado: HOLD
+[2026-05-04 13:30:55] BTCUSDT | Preço: 80241.13 | Estado: HOLD
+[2026-05-04 13:31:06] BTCUSDT | Preço: 80254.8 | Estado: HOLD
+[2026-05-04 13:31:18] BTCUSDT | Preço: 80243.77 | Estado: HOLD
+[2026-05-04 13:31:29] BTCUSDT | Preço: 80252.14 | Estado: HOLD
+[2026-05-04 13:31:40] BTCUSDT | Preço: 80250.45 | Estado: HOLD
+[2026-05-04 13:31:51] BTCUSDT | Preço: 80240.07 | Estado: HOLD
+[2026-05-04 13:32:03] BTCUSDT | Preço: 80247.74 | Estado: HOLD
+[2026-05-04 13:32:14] BTCUSDT | Preço: 80241.19 | Estado: HOLD
+[2026-05-04 13:32:25] BTCUSDT | Preço: 80254.52 | Estado: HOLD
+[2026-05-04 13:32:36] BTCUSDT | Preço: 80240.5 | Estado: HOLD
+[2026-05-04 13:32:48] BTCUSDT | Preço: 80230.26 | Estado: HOLD
+[2026-05-04 13:32:59] BTCUSDT | Preço: 80233.69 | Estado: HOLD
+[2026-05-04 13:33:10] BTCUSDT | Preço: 80214.76 | Estado: HOLD
+[2026-05-04 13:33:22] BTCUSDT | Preço: 80203.49 | Estado: HOLD
+[2026-05-04 13:33:33] BTCUSDT | Preço: 80215.74 | Estado: HOLD
+[2026-05-04 13:33:44] BTCUSDT | Preço: 80240.0 | Estado: HOLD
+[2026-05-04 13:33:55] BTCUSDT | Preço: 80232.57 | Estado: HOLD
+[2026-05-04 13:34:07] BTCUSDT | Preço: 80233.85 | Estado: HOLD
+[2026-05-04 13:34:18] BTCUSDT | Preço: 80250.0 | Estado: HOLD
+[2026-05-04 13:34:29] BTCUSDT | Preço: 80256.49 | Estado: HOLD
+[2026-05-04 13:34:40] BTCUSDT | Preço: 80274.65 | Estado: HOLD
+[2026-05-04 13:34:52] BTCUSDT | Preço: 80264.31 | Estado: HOLD
+[2026-05-04 13:35:03] BTCUSDT | Preço: 80318.29 | Estado: HOLD
+[2026-05-04 13:35:14] BTCUSDT | Preço: 80293.19 | Estado: HOLD
+[2026-05-04 13:35:26] BTCUSDT | Preço: 80282.78 | Estado: HOLD
+[2026-05-04 13:35:38] BTCUSDT | Preço: 80266.44 | Estado: HOLD
+[2026-05-04 13:35:49] BTCUSDT | Preço: 80277.02 | Estado: HOLD
+[2026-05-04 13:36:00] BTCUSDT | Preço: 80256.08 | Estado: HOLD
+[2026-05-04 13:36:12] BTCUSDT | Preço: 80283.07 | Estado: HOLD
+[2026-05-04 13:36:24] BTCUSDT | Preço: 80337.12 | Estado: HOLD
+[2026-05-04 13:36:35] BTCUSDT | Preço: 80340.73 | Estado: HOLD
+[2026-05-04 13:36:47] BTCUSDT | Preço: 80359.99 | Estado: HOLD
+[2026-05-04 13:36:58] BTCUSDT | Preço: 80296.27 | Estado: HOLD
+[2026-05-04 13:37:09] BTCUSDT | Preço: 80292.82 | Estado: HOLD
+[2026-05-04 13:37:21] BTCUSDT | Preço: 80286.07 | Estado: HOLD
+[2026-05-04 13:37:32] BTCUSDT | Preço: 80278.05 | Estado: HOLD
+[2026-05-04 13:37:44] BTCUSDT | Preço: 80310.58 | Estado: HOLD
+[2026-05-04 13:37:55] BTCUSDT | Preço: 80321.71 | Estado: HOLD
+[2026-05-04 13:38:06] BTCUSDT | Preço: 80305.0 | Estado: HOLD
+[2026-05-04 13:38:18] BTCUSDT | Preço: 80286.32 | Estado: HOLD
+[2026-05-04 13:38:29] BTCUSDT | Preço: 80266.17 | Estado: HOLD
+[2026-05-04 13:38:41] BTCUSDT | Preço: 80261.64 | Estado: HOLD
+[2026-05-04 13:38:54] BTCUSDT | Preço: 80272.84 | Estado: HOLD
+[2026-05-04 13:39:05] BTCUSDT | Preço: 80280.76 | Estado: HOLD
+[2026-05-04 13:39:16] BTCUSDT | Preço: 80278.39 | Estado: HOLD
+[2026-05-04 13:39:28] BTCUSDT | Preço: 80277.39 | Estado: HOLD
+[2026-05-04 13:39:39] BTCUSDT | Preço: 80298.49 | Estado: HOLD
+[2026-05-04 13:39:51] BTCUSDT | Preço: 80314.57 | Estado: HOLD
+[2026-05-04 13:40:02] BTCUSDT | Preço: 80297.31 | Estado: HOLD
+[2026-05-04 13:40:14] BTCUSDT | Preço: 80313.3 | Estado: HOLD
+[2026-05-04 13:40:25] BTCUSDT | Preço: 80305.84 | Estado: HOLD
+[2026-05-04 13:40:36] BTCUSDT | Preço: 80326.98 | Estado: HOLD
+[2026-05-04 13:40:48] BTCUSDT | Preço: 80302.38 | Estado: HOLD
+[2026-05-04 13:40:59] BTCUSDT | Preço: 80286.08 | Estado: HOLD
+[2026-05-04 13:41:11] BTCUSDT | Preço: 80302.65 | Estado: HOLD
+[2026-05-04 13:41:22] BTCUSDT | Preço: 80315.02 | Estado: HOLD
+[2026-05-04 13:41:34] BTCUSDT | Preço: 80264.59 | Estado: HOLD
+[2026-05-04 13:41:45] BTCUSDT | Preço: 80267.3 | Estado: HOLD
+[2026-05-04 13:41:56] BTCUSDT | Preço: 80258.4 | Estado: HOLD
+[2026-05-04 13:42:07] BTCUSDT | Preço: 80278.11 | Estado: HOLD
+[2026-05-04 13:42:19] BTCUSDT | Preço: 80257.29 | Estado: HOLD
+[2026-05-04 13:42:31] BTCUSDT | Preço: 80289.67 | Estado: HOLD
+[2026-05-04 13:42:42] BTCUSDT | Preço: 80286.07 | Estado: HOLD
+[2026-05-04 13:42:55] BTCUSDT | Preço: 80272.64 | Estado: HOLD
+[2026-05-04 13:43:07] BTCUSDT | Preço: 80284.69 | Estado: HOLD
+[2026-05-04 13:43:18] BTCUSDT | Preço: 80286.08 | Estado: HOLD
+[2026-05-04 13:43:29] BTCUSDT | Preço: 80301.15 | Estado: HOLD
+[2026-05-04 13:43:41] BTCUSDT | Preço: 80303.56 | Estado: HOLD
+[2026-05-04 13:43:53] BTCUSDT | Preço: 80298.75 | Estado: HOLD
+[2026-05-04 13:44:04] BTCUSDT | Preço: 80312.04 | Estado: HOLD
+[2026-05-04 13:44:15] BTCUSDT | Preço: 80320.33 | Estado: HOLD
+[2026-05-04 13:44:27] BTCUSDT | Preço: 80347.99 | Estado: HOLD
+[2026-05-04 13:44:38] BTCUSDT | Preço: 80336.09 | Estado: HOLD
+[2026-05-04 13:44:49] BTCUSDT | Preço: 80309.72 | Estado: HOLD
+[2026-05-04 13:45:01] BTCUSDT | Preço: 80270.27 | Estado: HOLD
+[2026-05-04 13:45:12] BTCUSDT | Preço: 80264.6 | Estado: HOLD
+[2026-05-04 13:45:23] BTCUSDT | Preço: 80248.6 | Estado: HOLD
+[2026-05-04 13:45:35] BTCUSDT | Preço: 80264.58 | Estado: HOLD
+[2026-05-04 13:45:46] BTCUSDT | Preço: 80282.67 | Estado: HOLD
+[2026-05-04 13:45:58] BTCUSDT | Preço: 80252.78 | Estado: HOLD
+[2026-05-04 13:46:09] BTCUSDT | Preço: 80247.87 | Estado: HOLD
+[2026-05-04 13:46:20] BTCUSDT | Preço: 80249.45 | Estado: HOLD
+[2026-05-04 13:46:31] BTCUSDT | Preço: 80261.99 | Estado: HOLD
+[2026-05-04 13:46:43] BTCUSDT | Preço: 80270.62 | Estado: HOLD
+[2026-05-04 13:46:55] BTCUSDT | Preço: 80292.8 | Estado: HOLD
+[2026-05-04 13:47:06] BTCUSDT | Preço: 80293.11 | Estado: HOLD
+[2026-05-04 13:47:18] BTCUSDT | Preço: 80292.68 | Estado: HOLD
+[2026-05-04 13:47:30] BTCUSDT | Preço: 80276.74 | Estado: HOLD
+[2026-05-04 13:47:42] BTCUSDT | Preço: 80279.37 | Estado: HOLD
+[2026-05-04 13:47:54] BTCUSDT | Preço: 80279.36 | Estado: HOLD
+[2026-05-04 13:48:05] BTCUSDT | Preço: 80300.0 | Estado: HOLD
+[2026-05-04 13:48:17] BTCUSDT | Preço: 80321.6 | Estado: HOLD
+[2026-05-04 13:48:28] BTCUSDT | Preço: 80264.86 | Estado: HOLD
+[2026-05-04 13:48:39] BTCUSDT | Preço: 80267.97 | Estado: HOLD
+[2026-05-04 13:48:51] BTCUSDT | Preço: 80260.01 | Estado: HOLD
+[2026-05-04 13:49:02] BTCUSDT | Preço: 80273.62 | Estado: HOLD
+[2026-05-04 13:49:14] BTCUSDT | Preço: 80229.13 | Estado: HOLD
+[2026-05-04 13:49:25] BTCUSDT | Preço: 80203.43 | Estado: HOLD
+[2026-05-04 13:49:37] BTCUSDT | Preço: 80208.64 | Estado: HOLD
+[2026-05-04 13:49:48] BTCUSDT | Preço: 80210.67 | Estado: HOLD
+[2026-05-04 13:50:00] BTCUSDT | Preço: 80232.29 | Estado: HOLD
+[2026-05-04 13:50:11] BTCUSDT | Preço: 80228.29 | Estado: HOLD
+[2026-05-04 13:50:22] BTCUSDT | Preço: 80229.1 | Estado: HOLD
+[2026-05-04 13:50:34] BTCUSDT | Preço: 80223.86 | Estado: HOLD
+[2026-05-04 13:50:45] BTCUSDT | Preço: 80216.7 | Estado: HOLD
+[2026-05-04 13:50:57] BTCUSDT | Preço: 80201.37 | Estado: HOLD
+[2026-05-04 13:51:08] BTCUSDT | Preço: 80189.82 | Estado: HOLD
+[2026-05-04 13:51:20] BTCUSDT | Preço: 80159.89 | Estado: HOLD
+[2026-05-04 13:51:32] BTCUSDT | Preço: 80136.52 | Estado: HOLD
+[2026-05-04 13:51:43] BTCUSDT | Preço: 80167.22 | Estado: HOLD
+[2026-05-04 13:51:55] BTCUSDT | Preço: 80183.99 | Estado: HOLD
+[2026-05-04 13:52:06] BTCUSDT | Preço: 80187.14 | Estado: HOLD
+[2026-05-04 13:52:18] BTCUSDT | Preço: 80184.16 | Estado: HOLD
+[2026-05-04 13:52:29] BTCUSDT | Preço: 80191.19 | Estado: HOLD
+[2026-05-04 13:52:40] BTCUSDT | Preço: 80211.06 | Estado: HOLD
+[2026-05-04 13:52:51] BTCUSDT | Preço: 80177.47 | Estado: HOLD
+[2026-05-04 13:53:03] BTCUSDT | Preço: 80177.46 | Estado: HOLD
+[2026-05-04 13:53:14] BTCUSDT | Preço: 80143.4 | Estado: HOLD
+[2026-05-04 13:53:25] BTCUSDT | Preço: 80143.41 | Estado: HOLD
+[2026-05-04 13:53:36] BTCUSDT | Preço: 80130.94 | Estado: HOLD
+[2026-05-04 13:53:48] BTCUSDT | Preço: 80130.94 | Estado: HOLD
+[2026-05-04 13:53:59] BTCUSDT | Preço: 80102.67 | Estado: STOP
+[2026-05-04 13:53:59] Saindo da posição
+[2026-05-04 13:54:01] 📊 Venda executada | Resultado: 0.39% | Valor: 0.19 USDT
+[2026-05-05 13:02:12] 🤖 Robô iniciado e monitorando mercado
