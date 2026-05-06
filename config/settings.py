@@ -29,7 +29,7 @@ TRADE_AMOUNT = 50 # valor em USDT por operação
 # "TRAILING" = iniciar trailing stop
 EXIT_MODE = "TRAILING"
 
-SIMULATION_MODE = False #Usado no simulador
+SIMULATION_MODE = True #Usado no simulador
 
 # SIMULATION_MODE = True → NÃO envia ordens simulando
 # SIMULATION_MODE = False → envia ordens não simulando
