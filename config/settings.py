@@ -1,25 +1,21 @@
 # PAR
-#SYMBOL = "BTCUSDT" # Substituido por multiplos pares
-SYMBOLS = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "ADAUSDT"]
+SYMBOL = "BTCUSDT"
 
 # TIMEFRAME
 TIMEFRAME = "5m"
 
 # RISCO
 STOP_LOSS = 0.01
-BREAK_EVEN = 0.005
-PROFIT_LOCK = 0.004 #Estava 0.002
+BREAK_EVEN = 0.006 # antes -> 0.005
+PROFIT_LOCK = 0.005 #Estava 0.002 depois 0.004
 
 # LUCRO
-TAKE_PROFIT = 0.01
-TRAILING_STOP = 0.004
-
-# TEMPO ENTRE OPERAÇÕES
-COOLDOWN_AFTER_SELL = 300
+TAKE_PROFIT = 0.012 #Anes -> 0.01
+TRAILING_STOP = 0.005#Antes -> 0.004
 
 # VALOR POR OPERAÇÃO
-TRADE_MODE = "PERCENT" #FIXED -> Quando quiser operar com valor fixo.
-TRADE_PERCENT = 0.85   # 20%
+TRADE_MODE = "PERCENT" # FIXED
+TRADE_PERCENT = 0.50
 TRADE_AMOUNT = 50 # valor em USDT por operação
 
 #SIMULATION_MODE = True # Adicionar no futuro
@@ -29,7 +25,7 @@ TRADE_AMOUNT = 50 # valor em USDT por operação
 # "TRAILING" = iniciar trailing stop
 EXIT_MODE = "TRAILING"
 
-SIMULATION_MODE = True #Usado no simulador
+SIMULATION_MODE = False #Usado no simulador
 
 # SIMULATION_MODE = True → NÃO envia ordens simulando
 # SIMULATION_MODE = False → envia ordens não simulando
