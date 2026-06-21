@@ -29,7 +29,7 @@ class RiskManagement:
         self.exit_mode = EXIT_MODE
 
     def update(self, current_price):
-        #return "TAKE_PROFIT" # Serve para adiantar o processo de simulação
+        #return "TAKE_PROFIT" # Serve para adiantar o porcsso de simulação
         # atualizar maior preço
         if current_price > self.highest_price:
             self.highest_price = current_price

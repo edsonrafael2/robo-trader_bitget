@@ -1,3 +1,4 @@
+import time
 from binance.client import Client
 import os
 
@@ -11,11 +12,13 @@ class BinanceClient:
 
         self.client = Client(api_key, api_secret)
 
-        # # (sincroniza com servidor Binance)
-        # self.client.API_URL = 'https://api.binance.com'
-        # self.client.get_server_time()
+        # Ajuste automático de horário
+        #server_time = self.client.get_server_time()
+        #system_time = int(time.time() * 1000)
+        #offset = server_time['serverTime'] - system_time
+        #self.client.timestamp_offset = offset
+        #print(f"[TIME SYNC] Offset Binance: {offset} ms")
 
-        
 
     def get_price(self, symbol):
 

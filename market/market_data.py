@@ -1,36 +1,26 @@
 
-import requests
+# from exchange.binance_client import BinanceClient
 
 
-class MarketData:
+# class MarketData:
 
-    def __init__(self):
-        self.base_url = "https://api.bitget.com"
+#     def __init__(self, client, symbol, timeframe):
 
-    def get_price(self, symbol):
+#         self.client = client
+#         self.symbol = symbol
+#         self.timeframe = timeframe
 
-        url = f"{self.base_url}/api/spot/v1/market/ticker"
-        params = {"symbol": symbol}
+#     def get_candles(self, limit=50):
 
-        response = requests.get(url, params=params).json()
+#         candles = self.client.get_klines(
+#             symbol=self.symbol,
+#             interval=self.timeframe,
+#             limit=limit
+#         )
 
-        return float(response['data']['close'])
+#         return candles
 
-    def get_klines(self, symbol, interval="1min", limit=50):
-
-        url = f"{self.base_url}/api/spot/v1/market/candles"
-
-        params = {
-            "symbol": symbol,
-            "period": interval,
-            "limit": limit
-        }
-
-        response = requests.get(url, params=params).json()
-
-        return response['data']
-
-
+#===============================================================================================
 
 
 # from exchange.binance_client import BinanceClient
@@ -40,19 +30,43 @@ class MarketData:
 
 #     def __init__(self):
 
-#         self.binance = BinanceClient()
-#         self.client = self.binance.client
+#         self.client = BinanceClient()
 
 #     def get_price(self, symbol):
 
-#         return self.binance.get_price(symbol)
+#         return self.client.get_price(symbol)
 
 #     def get_klines(self, symbol, interval="1m", limit=50):
 
-#         candles = self.client.get_klines(
+#         candles = self.client.client.get_klines(
 #             symbol=symbol,
 #             interval=interval,
 #             limit=limit
 #         )
 
 #         return candles
+
+
+from exchange.binance_client import BinanceClient
+
+
+class MarketData:
+
+    def __init__(self):
+
+        self.binance = BinanceClient()
+        self.client = self.binance.client
+
+    def get_price(self, symbol):
+
+        return self.binance.get_price(symbol)
+
+    def get_klines(self, symbol, interval="1m", limit=50):
+
+        candles = self.client.get_klines(
+            symbol=symbol,
+            interval=interval,
+            limit=limit
+        )
+
+        return candles
