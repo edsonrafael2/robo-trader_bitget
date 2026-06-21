@@ -1,140 +1,38 @@
-from config.settings import SIMULATION_MODE, TRADE_MODE, TRADE_PERCENT
-from utils.logger import log
+from config.settings import SIMULATION_MODE, TRADE_MODE, TRADE_PERCENT # Usado no simulador
 import math
-import requests
-import os
-import time
-import hmac
-import base64
-import hashlib
-import json
-
 
 class OrderExecutor:
 
     def __init__(self, client, symbol, trade_amount):
+        self.client = client
         self.symbol = symbol
         self.trade_amount = trade_amount
-        self.simulation = SIMULATION_MODE
+        self.simulation = SIMULATION_MODE # Usado no simulador
+        self.step_size, self.min_qty = self._get_lot_size_filters()
 
-        self.api_key = os.getenv("BITGET_KEY")
-        self.api_secret = os.getenv("BITGET_SECRET")
-        self.passphrase = os.getenv("BITGET_PASSPHRASE")
-
-        self.base_url = "https://api.bitget.com"
-
-        # 🔥 pega step dinâmico
-        self.step_size, self.min_qty = self._get_symbol_rules()
-
-    # =========================
-    # REQUEST COM RETRY
-    # =========================
-    def _request(self, method, endpoint, params=None, body=None):
-
-        url = self.base_url + endpoint
-
-        for attempt in range(3):
-            try:
-                headers = self._headers(method, endpoint, body)
-
-                response = requests.request(
-                    method,
-                    url,
-                    params=params,
-                    data=body,
-                    headers=headers,
-                    timeout=10
-                )
-
-                data = response.json()
-
-                if data.get("code") != "00000":
-                    log(f"[ERRO BITGET] {data}")
-                    return None
-
-                return data
-
-            except Exception as e:
-                log(f"[RETRY {attempt+1}] erro request: {e}")
-                time.sleep(2)
-
-        raise Exception("Falha após 3 tentativas")
-
-    # =========================
-    # ASSINATURA
-    # =========================
-    def _sign(self, timestamp, method, request_path, body=""):
-        message = str(timestamp) + method + request_path + (body or "")
-        mac = hmac.new(
-            self.api_secret.encode(),
-            message.encode(),
-            hashlib.sha256
-        )
-        return base64.b64encode(mac.digest()).decode()
-
-    def _headers(self, method, request_path, body=None):
-        timestamp = str(int(time.time() * 1000))
-
-        sign = self._sign(timestamp, method, request_path, body)
-
-        return {
-            "ACCESS-KEY": self.api_key,
-            "ACCESS-SIGN": sign,
-            "ACCESS-TIMESTAMP": timestamp,
-            "ACCESS-PASSPHRASE": self.passphrase,
-            "Content-Type": "application/json"
-        }
-
-    # =========================
-    # PREÇO
-    # =========================
     def get_price(self):
 
-        url = f"{self.base_url}/api/spot/v1/market/ticker"
-        params = {"symbol": self.symbol}
+        ticker = self.client.get_symbol_ticker(symbol=self.symbol)
+        return float(ticker["price"])
 
-        response = requests.get(url, params=params).json()
+    # def calculate_quantity(self):
 
-        return float(response["data"]["close"])
+    #     price = self.get_price()
 
-    # =========================
-    # BALANCE REAL
-    # =========================
+    #     quantity = self.trade_amount / price
+
+    #     return round(quantity, 6)
+
     def get_balance(self):
+        try:
+            # Busca o saldo da carteira Spot para a moeda que você usa para comprar (USDT)
+            account_info = self.client.get_asset_balance(asset="USDT")
+            return float(account_info['free'])
+        except Exception as e:
+            print(f"[ERRO] Não foi possível buscar o saldo de USDT: {e}")
+            return 0.0
 
-        endpoint = "/api/spot/v1/account/assets"
-
-        data = self._request("GET", endpoint)
-
-        if not data:
-            return 0
-
-        for asset in data["data"]:
-            if asset["coinName"] == "USDT":
-                return float(asset["available"])
-
-        return 0
-
-    # =========================
-    # REGRAS DO PAR
-    # =========================
-    def _get_symbol_rules(self):
-
-        url = f"{self.base_url}/api/spot/v1/public/products"
-        data = requests.get(url).json()
-
-        for item in data["data"]:
-            if item["symbol"] == self.symbol:
-                step = float(item["minTradeAmount"])
-                return step, step
-
-        return 0.000001, 0.000001
-
-    # =========================
-    # QUANTIDADE
-    # =========================
     def calculate_quantity(self):
-
         price = self.get_price()
 
         if TRADE_MODE == "FIXED":
@@ -145,24 +43,21 @@ class OrderExecutor:
             usdt_value = balance * TRADE_PERCENT
 
         if usdt_value < 5:
-            log("[ERRO] Saldo insuficiente")
+            print("[ERRO] Saldo insuficiente")
             return None
 
         raw_quantity = usdt_value / price
 
         quantity = self._adjust_quantity(raw_quantity)
 
-        log(f"[QTD] Raw: {raw_quantity} | Ajustado: {quantity}")
+        print(f"[DEBUG] USDT: {usdt_value:.2f} [DEBUG] Raw: {raw_quantity} | Ajustado: {quantity}")
 
         if quantity < self.min_qty:
-            log("[ERRO] Quantidade abaixo do mínimo")
+            print(f"[ERRO] Quantidade abaixo do mínimo: {quantity} < {self.min_qty}")
             return None
 
         return quantity
 
-    # =========================
-    # BUY
-    # =========================
     def buy(self):
 
         quantity = self.calculate_quantity()
@@ -170,244 +65,75 @@ class OrderExecutor:
         if quantity is None:
             return None
 
+        # Condição abaixo usado para a simulação
         if self.simulation:
-            log(f"[SIMULAÇÃO] COMPRA {self.symbol} {quantity}")
-            return {"status": "simulated"}
+            print(f"[SIMULAÇÃO] COMPRA: {quantity}")
+            return {"status": "simulated_buy", "quantity": quantity}
 
-        endpoint = "/api/spot/v1/trade/orders"
+        print(f"Executando COMPRA: {quantity}")
 
-        body = json.dumps({
-            "symbol": self.symbol,
-            "side": "buy",
-            "orderType": "market",
-            "size": str(quantity)
-        })
+        order = self.client.order_market_buy(
+            symbol=self.symbol,
+            quantity=quantity
+        )
 
-        response = self._request("POST", endpoint, body=body)
+        return order
 
-        if not response:
-            log(f"[ERRO] Falha ao executar COMPRA {self.symbol}")
-            return None
-
-        log(f"[COMPRA] {self.symbol} {quantity}")
-        
-        return response
-
-    # =========================
-    # SELL
-    # =========================
+ 
     def sell(self):
-
-        quantity = self.calculate_quantity()
-
-        if quantity is None:
-            return None
-
+        # 1. Condicional usado na simulação (permanece idêntico)
         if self.simulation:
-            log(f"[SIMULAÇÃO] VENDA {self.symbol} {quantity}")
-            return {"status": "simulated"}
+            quantity = self.calculate_quantity()
+            if quantity is None:
+                return None
+            print(f"[SIMULAÇÃO] VENDA: {quantity}")
+            return {"status": "simulated_sell", "quantity": quantity}
 
-        endpoint = "/api/spot/v1/trade/orders"
+        # 2. OPERAÇÃO REAL: Consulta o saldo real disponível na Binance
+        try:
+            # Extrai o ativo base (Ex: de "BTCUSDT" extrai apenas "BTC")
+            base_asset = self.symbol.replace("USDT", "")
 
-        body = json.dumps({
-            "symbol": self.symbol,
-            "side": "sell",
-            "orderType": "market",
-            "size": str(quantity)
-        })
+            # Busca o saldo direto da API da Binance
+            account_info = self.client.get_asset_balance(asset=base_asset)
+            real_balance = float(account_info['free'])
 
-        response = self._request("POST", endpoint, body=body)
+            # Aplica o mesmo ajuste matemático para respeitar o step_size da exchange
+            quantity = self._adjust_quantity(real_balance)
 
-        if not response:
-            log(f"[ERRO] Falha ao executar COMPRA {self.symbol}")
-            return None
+            print(f"[DEBUG VENDA] Saldo Real: {real_balance} | Ajustado para Venda: {quantity}")
 
-        log(f"[VENDA] {self.symbol} {quantity}")
+            # Validação de segurança para quantidade mínima
+            if quantity < self.min_qty:
+                print(f"[ERRO VENDA] Saldo real em conta ({quantity}) é menor que o mínimo exigido ({self.min_qty})")
+                return None
 
-        return response
+        except Exception as e:
+            print(f"[ERRO] Falha ao consultar saldo real na Binance para venda: {e}")
+            raise e # Lança o erro para o bloco except do main.py gerenciar
 
-    # =========================
-    # AJUSTE DE LOTE
-    # =========================
+        # 3. Executa a venda no mercado real com precisão cirúrgica
+        print(f"Executando VENDA REAL de {quantity} {base_asset}")
+
+        order = self.client.order_market_sell(
+            symbol=self.symbol,
+            quantity=quantity
+        )
+
+        return order
+
+    def _get_lot_size_filters(self):
+        info = self.client.get_symbol_info(self.symbol)
+
+        lot_size = next(f for f in info['filters'] if f['filterType'] == 'LOT_SIZE')
+
+        step_size = float(lot_size['stepSize'])
+        min_qty = float(lot_size['minQty'])
+
+        return step_size, min_qty
+
+
     def _adjust_quantity(self, quantity):
         adjusted = math.floor(quantity / self.step_size) * self.step_size
-        return float(f"{adjusted:.8f}")
-
-
-
-# from config.settings import SIMULATION_MODE, TRADE_MODE, TRADE_PERCENT
-# import math
-# import requests
-# import os
-# import time
-# import hmac
-# import base64
-# import hashlib
-# import json
-
-
-# class OrderExecutor:
-
-#     def __init__(self, client, symbol, trade_amount):
-#         self.client = client
-#         self.symbol = symbol
-#         self.trade_amount = trade_amount
-#         self.simulation = SIMULATION_MODE
-
-#         self.api_key = os.getenv("BITGET_KEY")
-#         self.api_secret = os.getenv("BITGET_SECRET")
-#         self.passphrase = os.getenv("BITGET_PASSPHRASE")
-
-#         self.base_url = "https://api.bitget.com"
-
-#         # Bitget simplificado (sem step dinâmico por enquanto)
-#         self.step_size = 0.000001
-#         self.min_qty = 0.00001
-
-#     # =========================
-#     # PREÇO
-#     # =========================
-#     def get_price(self):
-
-#         url = f"{self.base_url}/api/spot/v1/market/ticker"
-#         params = {"symbol": self.symbol}
-
-#         response = requests.get(url, params=params).json()
-
-#         return float(response['data']['close'])
-
-#     # =========================
-#     # BALANCE
-#     # =========================
-#     def get_balance(self):
-
-#         # ⚠️ simplificado (pode ajustar depois com assinatura real)
-#         return 100  # fallback simulado
-
-#     # =========================
-#     # QUANTIDADE
-#     # =========================
-#     def calculate_quantity(self):
-
-#         price = self.get_price()
-
-#         if TRADE_MODE == "FIXED":
-#             usdt_value = self.trade_amount
-
-#         elif TRADE_MODE == "PERCENT":
-#             balance = self.get_balance()
-#             usdt_value = balance * TRADE_PERCENT
-
-#         raw_quantity = usdt_value / price
-
-#         quantity = self._adjust_quantity(raw_quantity)
-
-#         print(f"[DEBUG] Raw: {raw_quantity} | Ajustado: {quantity}")
-
-#         if quantity < self.min_qty:
-#             print(f"[ERRO] Quantidade abaixo do mínimo")
-#             return None
-
-#         return quantity
-
-#     # =========================
-#     # ASSINATURA
-#     # =========================
-#     def _sign(self, timestamp, method, request_path, body=""):
-#         message = str(timestamp) + method + request_path + body
-#         mac = hmac.new(
-#             bytes(self.api_secret, encoding='utf-8'),
-#             bytes(message, encoding='utf-8'),
-#             digestmod=hashlib.sha256
-#         )
-#         return base64.b64encode(mac.digest()).decode()
-
-#     def _headers(self, method, request_path, body=""):
-#         timestamp = str(int(time.time() * 1000))
-
-#         sign = self._sign(timestamp, method, request_path, body)
-
-#         return {
-#             "ACCESS-KEY": self.api_key,
-#             "ACCESS-SIGN": sign,
-#             "ACCESS-TIMESTAMP": timestamp,
-#             "ACCESS-PASSPHRASE": self.passphrase,
-#             "Content-Type": "application/json"
-#         }
-
-#     # =========================
-#     # BUY
-#     # =========================
-#     def buy(self):
-
-#         quantity = self.calculate_quantity()
-
-#         if quantity is None:
-#             return None
-
-#         if self.simulation:
-#             print(f"[SIMULAÇÃO] COMPRA: {quantity}")
-#             return
-
-#         print(f"Executando COMPRA: {quantity}")
-
-#         endpoint = "/api/spot/v1/trade/orders"
-
-#         body = json.dumps({
-#             "symbol": self.symbol,
-#             "side": "buy",
-#             "orderType": "market",
-#             "size": str(quantity)
-#         })
-
-#         headers = self._headers("POST", endpoint, body)
-
-#         response = requests.post(
-#             self.base_url + endpoint,
-#             headers=headers,
-#             data=body
-#         )
-
-#         return response.json()
-
-#     # =========================
-#     # SELL
-#     # =========================
-#     def sell(self):
-
-#         quantity = self.calculate_quantity()
-
-#         if quantity is None:
-#             return None
-
-#         if self.simulation:
-#             print(f"[SIMULAÇÃO] VENDA: {quantity}")
-#             return
-
-#         print(f"Executando VENDA: {quantity}")
-
-#         endpoint = "/api/spot/v1/trade/orders"
-
-#         body = json.dumps({
-#             "symbol": self.symbol,
-#             "side": "sell",
-#             "orderType": "market",
-#             "size": str(quantity)
-#         })
-
-#         headers = self._headers("POST", endpoint, body)
-
-#         response = requests.post(
-#             self.base_url + endpoint,
-#             headers=headers,
-#             data=body
-#         )
-
-#         return response.json()
-
-#     # =========================
-#     # AJUSTE
-#     # =========================
-#     def _adjust_quantity(self, quantity):
-#         adjusted = math.floor(quantity / self.step_size) * self.step_size
-#         return round(adjusted, 6)
+        return round(adjusted, 6)
+        #return math.floor(quantity / self.step_size) * self.step_size
