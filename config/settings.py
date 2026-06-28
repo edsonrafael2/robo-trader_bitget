@@ -4,6 +4,9 @@ SYMBOL = "BTCUSDT"
 # TIMEFRAME
 TIMEFRAME = "5m"
 
+#
+SANDBOX = False
+
 # RISCO
 STOP_LOSS = 0.01
 BREAK_EVEN = 0.006 # antes -> 0.005
